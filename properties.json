@@ -1,0 +1,47 @@
+{
+    "all": {
+        "age": "int",
+        "name": "string",
+        "gender": [
+            "M",
+            "F"
+        ],
+        "checkupC": [
+            "A",
+            "B",
+            "C"
+        ],
+        "sugar": "float",
+        "BP": "float"
+    },
+    "key_conditions": {
+        "checkupC": [
+            [
+                "gender",
+                "==",
+                "M"
+            ],
+            [
+                "age",
+                ">",
+                30
+            ]
+        ]
+    },
+    "value_conditions": {
+        "checkupC": {
+            "C": [
+                [
+                    "gender",
+                    "==",
+                    "M"
+                ],
+                [
+                    "age",
+                    ">",
+                    40
+                ]
+            ]
+        }
+    }
+}
